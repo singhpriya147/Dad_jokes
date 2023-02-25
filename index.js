@@ -10,7 +10,7 @@ const getDadJokes = async () => {
 
   const data = await response.json();
   console.log(data);
-  const jokeDiv = document.querySelector('.joke-div');
+  const jokeDiv = document.querySelector('.joke');
   jokeDiv.innerHTML = data.joke;
 };
 getDadJokes();
